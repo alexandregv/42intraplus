@@ -12,3 +12,7 @@ Lien de l'extension : https://chrome.google.com/webstore/detail/42-intra-plus/an
 ## La fonction set_logtime = (logtime, start, end) ne fonctionne pas. (enfin presque).
 
 J'ai commencer a la faire mais manque de temps, elle fonctionne presque, elle a ete faites pour pouvoir selectioner un lapse de temps entre deux date, afin de calculer le logtime d'une personne sur L'intra.
+
+
+
+# OUI CE CODE EST SALE, MAIS FONCTIONNEL.
