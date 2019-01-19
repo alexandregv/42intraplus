@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
+  <app appid='ankbaignbdiecmhihbjoeglhhnlelaia'>
+    <updatecheck codebase='https://clients2.googleusercontent.com/crx/blobs/QgAAAC6zw0qH2DJtnXe8Z7rUJP3Vyw1ZYDekNNejle-L44fId8WO8O9P3D2P8NaexlopmNcrMoF_DluoVYgTG2ji851daz1Jl3Dc4iEljA78g-6MAMZSmuVzurcLkPXo1JALyTOmtMYICffnmQ/ankbaignbdiecmhihbjoeglhhnlelaia_main.crx' version='2.0' />
+  </app>
+</gupdate>

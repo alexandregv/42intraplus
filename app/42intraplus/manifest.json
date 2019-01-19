@@ -1,0 +1,59 @@
+{
+  "name": "42 Intra plus",
+  "version": "1.50006",
+  "manifest_version": 2,
+  "description": "This extension adds much more to the Intranet for the schools based of 42 cursus.",
+  "icons": {
+    "16": "images/42intraplus_logo_16.png",
+    "48": "images/42intraplus_logo_48.png",
+    "64": "images/42intraplus_logo_64.png",
+    "128": "images/42intraplus_logo_128.png"
+  },
+  "browser_action": {
+      "default_icon": { "16": "images/42intraplus_logo_16.png","48": "images/42intraplus_logo_48.png",
+        "64": "images/42intraplus_logo_64.png","128": "images/42intraplus_logo_128.png"
+      },
+      "default_title": "42 intra plus",
+      "default_popup": "popup.html"
+  },
+  "web_accessible_resources": ["*.css"],
+  "background": {
+    "scripts": [
+      "./scripts/socket.io.slim.js",
+      "./background/socket.js",
+      "./background/runtime.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [ 
+    {
+      "matches": ["*://*.intra.42.fr/*" ],
+      "all_frames": true,
+      "css": [ "./styles/data.css"],
+      "js": [ "./scripts/jquery-3.3.1.min.js", "./scripts/js.cookie.min.js","./includes/parser.js", "./includes/themes.js","./includes/utils.js","intraplus.js","./includes/locations.js"],
+      "run_at": "document_start"
+  },
+  {
+    "matches": [ "https://the-matrix.le-101.fr/*"],
+    "js": [ "./scripts/jquery-3.3.1.min.js", "./scripts/js.cookie.min.js", "./includes/matrix.js" ],
+    "run_at": "document_end"
+  },
+  {
+    "matches": [ "https://stud42.fr/*"],
+    "js": [ "./scripts/jquery-3.3.1.min.js", "./scripts/js.cookie.min.js", "./includes/stud42.js" ],
+    "run_at": "document_start"
+  }],
+  "permissions": [ 
+    "tabs",
+    "webRequest",
+    "notifications",
+    "sessions",
+    "storage",
+    "cookies",
+    "https://*.intra.42.fr/",
+    "https://42intraplus.fr/",
+    "webRequestBlocking",
+    "webNavigation",
+    "wss://*/"],
+  "homepage_url": "https://42intraplus.fr"
+}

@@ -1,0 +1,443 @@
+.tb42-modal
+{
+    justify-content: center; 
+    box-shadow: 1px 3px 18px 2px #1b1b1b;
+    display: none;
+    z-index: 999999999999;
+    position: fixed;
+    right: 0;
+    top: 150px;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 10em;
+    width: 650px;
+    padding: 0 25px 0 25px;
+    color: white;
+    opacity: 0;
+    background: rgba(33, 33, 33, 0.95);
+    -webkit-transition: opacity,display 2s; /* Safari */
+    transition: opacity,display  2s;
+}
+.tb42-modal.show_modal{
+    display: flex;
+    opacity: 1;
+}
+.tb42-backdrop
+{
+    background: rgba(68, 68, 68, 0.6196078431372549);
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    margin: 0;
+    z-index: 500;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+.tb42-modal>h2
+{
+    display: flex;
+    justify-content: start;
+    width: 177px;
+    background: #171717;
+    height: 177px;
+    padding: 55px 0 0 00;
+    border-radius: 100px;
+    box-shadow: 1px 1px 1px #171717;
+    text-align: center;
+    font-size: 22pt;
+    font-family: inherit;
+    color: white;
+    margin: 35px 0px 15px;
+}
+.tb42-modal>h2>.tb42-version
+{
+    position: absolute;
+    margin: 68px;
+    top: +95px;
+    font-size: 8pt;
+    width: 97px;
+    left: 0;
+}
+.tb42-modal>.tb42-content
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0 10px 0;
+    height: 250px;
+    margin: 0 0 14px 0;
+
+}
+.tb42-modal>.tb42-header
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.tb42-header>.tb42-close
+{
+    
+    position: absolute;
+    right: +20px;
+    cursor:  pointer;
+    font-family: sans-serif;
+    top: +8px;
+
+}
+.tb42-content>.tb42-main{
+    width: 420px;
+    padding: 30px 0 0 7px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    height: 100%;
+}
+.tb42-main>.tb42-theme
+{
+    justify-content: start;
+    justify-self: start;
+    display: flex;
+    clear: right;
+    background: transparent;
+    height: 50px;
+    font-family: inherit;
+    padding: 14px 0 0 19px;
+}
+.tb42-theme>#themechanger{
+    margin-left: +8px;
+    border: none;
+    background: #171717;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px #171717;
+    height: 34px;
+    font-size: 11pt;
+    margin: -6px 0 0 0;
+}
+.tb42-main>.tb42-privacy{
+    flex-direction: column;
+    justify-content: end;
+    justify-self: self-end;
+    justify-items: self-end;
+    display: flex;
+    clear: left;
+    background: transparent;
+    padding: 14px 0 0 19px;
+}
+.tb42-privacy>.tb42-label-privacy{
+    font-size: 13pt;
+}
+.tb42-privacy>.tb42-privacy-opt{
+    font-size: 11pt;
+    margin: 0 0 0 13px;
+}
+.tb42-privacy-opt>.tb42-privacy-option{
+    color: rgb(255, 255, 255);
+}
+.tb42-privacy-opt input[type="checkbox"]{
+    padding: 0 0 0 0;
+    margin: 5px 0 0 16px;
+    line-height: 0;
+    position: absolute;
+}
+.user-infos#credit {
+    display:inline-block;
+    margin: 5px 0 0 0;
+    width: 120px;
+    font-size: 13pt;
+    padding: 10px 0 0 0;
+}
+.user-infos#last-location {
+    display:inline-block;
+    margin: 5px 0 0 0;
+    width: 120px;
+    font-size: 13pt;
+    padding: 10px 0 0 0;
+}
+.user-infos#last-connexion {
+    display:inline-block;
+    margin: 5px 0 0 0;
+    width: 120px;
+    font-size: 13pt;
+    padding: 10px 0 0 0;
+}
+.credits-number{
+    color:gold !important;
+}
+.last-host
+{
+    color: #00a9bc;
+}
+.last-time
+{
+    color:gray;
+    text-decoration: underline;
+}
+div#logtime_con {
+    padding: 0;
+    overflow: hidden;
+    display: none;
+    opacity:0;
+    transition: opacity,display 300ms ease-in-out;
+    -webkit-transition:opacity,display 300ms ease-in-out;
+}
+
+span#total-logtime {
+    font-size: 23pt;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+}
+
+div#logtime_goal {
+    width: 100%;
+}
+.logtime-counter span.logtime-messages{
+    width:100%;
+    height:1px;
+    display:block;
+    margin:-10px 0 10px -8px;
+}
+.profile-item.location {
+    -webkit-transition: max-width 2s; /* Safari */
+    transition: max-width 2s;
+}
+.logtime-counter {
+    padding: 0px 10px 10px 15px;
+    width: 100%;
+    height: 100%;
+}
+.logtime-count {
+    font-size: 23pt;
+    clear: both;
+    flex: 1;
+    justify-content: center;
+    display: inline-flex;
+    margin: 0 5px;
+}
+.title-ctn {
+    font-size: 12pt;
+    display: inline-flex;
+    position: absolute;
+    margin: -24px 0 0 0;
+}
+span#logrel-phrase {
+    font-size: 17pt;
+    margin: -29px 0 0;
+    display: block;
+}
+
+span#meme-phrase {
+    display: block;
+    width: auto;
+    /* text-align: right!important; */
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    div#logtime_goal {
+        margin: -85px 0 0 0;
+    }
+    div#logtime_con {
+        margin: 13px 0 0 0;
+        height:250px;
+    }
+    .logtime-messages{
+        max-width:100%;
+        font-size:3pt;
+    }
+    .meme-messages{
+        text-align:center;
+        top: 14px;
+        left: 0px !important;
+        width: 125px !important;
+        margin: 0!important;
+    }
+    .user-infos{
+        display: inherit;
+    }
+    .user-infos#credit {
+        display:inline-block;
+        margin: 2px 0 0 0;
+        width: 100px!important;
+        font-size: 13pt!important;
+        padding: 9px 0 0 0!important;
+    }
+    .user-infos#last-location {
+        display:inline-block!important;
+        margin: 2px 0 0 0!important;
+        width: 100px!important;
+        font-size: 13pt!important;
+        padding: 9px 0 0 0!important;
+    }
+    .user-infos#last-connexion {
+        display:inline-block!important;
+        margin: 2px 0 0 0!important;
+        width: 100px!important;
+        font-size: 13pt!important;
+        padding: 9px 0 0 0!important;
+    }
+}
+@media (max-width: 992px){
+    div#logtime_con {
+        padding: 50px 0px 50px 0px !important;
+        margin-top: 10px!important;
+    }
+}
+.error{
+    display: inline-block;
+    color: #ff2500;
+    font-size: 16pt;
+    margin-top: 23px !important;
+    opacity: 0.8;
+}
+.last-locations{
+    z-index: 999999;
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px 0 0 35px;
+}
+.last-locations>h1,{
+    color:black;
+}
+.last-locations>h2{
+    color:black;
+}
+.last-locations>h3{
+    color:black;
+}
+.last-locations>span{
+    color:black;
+}
+#close-lastlocation{
+    color: black;
+    z-index: 999999;
+    position: absolute;
+    right: 105px;
+    top: 45px;
+    font-size: 32px;
+    cursor: pointer;
+}
+#locationhistoryclock{
+    cursor: pointer!important;
+    position: relative!important;
+    text-align: right!important;
+    right: 13px!important;
+    top: 3px!important;
+}
+[data-meme="0"]
+{
+    width: 458px!important;
+    font-size: 14pt !important;
+    margin: 0 0 0 0;
+}
+[data-meme="1"]
+{
+    width: 458px!important;
+    font-size: 14pt !important;
+    margin: 0 0 0 0;
+}
+[data-meme="2"]
+{
+    width: 460px !important;
+    margin: 0 0 0 0;
+}
+[data-meme="3"]
+{
+    width: 460px !important;
+    margin: 0 0 0 0;
+}
+[data-meme="4"]
+{
+    width: 460px !important;
+    font-size: 15pt !important;
+    margin: 0 0 0 0;
+}
+[data-meme="5"]
+{
+    width: 360px !important;
+    font-size: 13pt !important;
+    margin: 0 0 0 0;
+}
+[data-meme="6"]
+{
+    width: 360px !important;
+    font-size: 13pt !important;
+    margin: 0 0 0 0;
+}
+[data-meme="7"]
+{
+    width: 480px !important;
+    font-size: 14.2pt !important;
+    margin: 0 0 0 0;
+}
+[data-meme="8"]
+{
+    width: 550px !important;
+    font-size: 14.2pt !important;
+    margin: 0 0 0 0;
+}
+[data-meme="9"]
+{
+    width: 460px !important;
+    margin: 0 0 0 0;
+}
+[data-meme="10"]
+{
+    width: 580px !important;
+    font-size: 14.5pt !important;
+    margin: 0 0 0 0;
+}
+[data-meme="11"]
+{
+    width: 460px !important;
+    margin: 0 0 0 0;
+}
+[data-meme="12"]
+{
+    width: 460px !important;
+    margin: 0 auto 12px auto !important;
+}
+[data-meme="12"]
+{
+    width: 460px !important;
+    margin: 0 0 0 0;
+}
+[data-meme="13"]
+{
+    width: 580px !important;
+    font-size: 14.5pt !important;
+    margin: 0 0 0 0;
+}
+[data-meme="14"]
+{
+    width: 460px !important;
+    margin: 0 0 0 0;
+}
+[data-meme="15"]
+{
+    width: 580px !important;
+    font-size: 15.5pt !important;
+    margin: 0 0 0 0;
+}
+[data-vis="show"] {
+    opacity: 1!important;
+    display: flex!important;
+}
+.small-counter.hours
+{
+    font-size: 11pt;
+    color: #bdbdbd;
+}
+
+.small-counter.mins
+{
+    font-size: 8pt;
+    color: #bdbdbd;
+}

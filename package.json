@@ -1,0 +1,25 @@
+{
+  "name": "42intraplus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hironichu/42intraplus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hironichu/42intraplus/issues"
+  },
+  "homepage": "https://github.com/Hironichu/42intraplus#readme"
+}

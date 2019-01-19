@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    padding: 50px 0 0 0;
+    background: #131313;
+}
+
+button {
+    border: none;
+    display: block;
+    margin: 9px auto 48px auto;
+    background: #007bb5;
+    padding: 18px 18px 18px 18px;
+    font-family: arial;
+    font-size:  13pt;
+    color: white;
+}
+button:hover
+{
+    mouse:pointer;
+    color:gray;
+}
